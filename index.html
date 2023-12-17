@@ -11,16 +11,18 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>weatherapp</title>
+
+    <title>Weather App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form>
+        <form id="search-input">
           <input
             type="search"
             placeholder="Enter city..."
             required
+            id="app-search-input"
             class="search-input"
           />
           <input type="submit" value="search" class="search-form" />
@@ -29,7 +31,7 @@
       <main>
         <div class="app-data">
           <div>
-            <h1 class="weather-city">Lisbon</h1>
+            <h1 class="weather-city" id="weather-city">Lisbon</h1>
             <p class="app-details">
               Monday 13:45, scatterd clouds
               <br />
@@ -38,7 +40,7 @@
           </div>
           <div class="weather-temperature-display">
             <div class="app-icon">⛅</div>
-            <div class="app-temperature">24</div>
+            <div class="app-temperature" id="app-temperature">24</div>
             <div class="app-unit">°C</div>
           </div>
         </div>
@@ -50,5 +52,6 @@
         <a href="#" target="_blank"> hosted on Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
